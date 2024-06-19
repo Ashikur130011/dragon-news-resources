@@ -17,7 +17,7 @@ const LeftSideNavbar = () => {
                 categories.map(category => <Link 
                     key={category.id} 
                     className='block ml-6 text-left text font-semibold'
-                    category={category}
+                    to={`/category/${category.id}`}
                     >{category.name}</Link>)
             }
         </div>
